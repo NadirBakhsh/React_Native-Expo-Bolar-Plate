@@ -10,3 +10,32 @@ import {store , persistor} from './store'
 	Navigation components
   </PersistGate>
   </Provider>
+
+
+////////////////////////
+use where u want to use redux
+
+import { connect } from 'react-redux'
+
+
+//geting data
+function mapStateToProps(state) {
+    return {
+        user: state.user
+    }
+}
+
+
+///Update Data
+function mapDispatchToProps(dispatch) {
+    return {
+        store_users_data: (userInfo) => dispatch(update_user(userInfo))
+    }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignUpScrren);
+
+
+
+
