@@ -1,1 +1,1 @@
-# React_Native-Expo-Bolar-Plate 
+# React_Native-Expo-Bolar-Plate
